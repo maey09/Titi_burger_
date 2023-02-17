@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -28,6 +27,34 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+
+/*************ACCUEIL*************/
+
+
+/* RESPONSIVE*/
+
+
+@media screen and (max-width: 580px){
+    #footer {width: 95%; margin: 0 auto;}
+    #header {width: 100%;}
+    /* #nav {width: 40%; float: right;} */
+    nav {display: none;}
+    
+}
+
+
+
+
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+
 body {
 	line-height: 1;
 }
@@ -76,7 +103,8 @@ header{
 }
 
 .logo img{
-    width:80%
+
+    width:60%
 }
 
 .navigation{
@@ -129,30 +157,44 @@ nav a:hover{
 
 
 main{
-    height: 1200px; 
     margin: 40px;
     
 }
 
-.flex{
+.restoTitiStory{
     display: flex;
     flex-wrap: wrap;
     margin:auto;
 
 }
 
-.burger1{
-    width: 50%;
+.leResto{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.burger1 img{
+.leResto img{
     width: 100%;
+    margin: 10%;
+    border-radius: 15px;
 }
+
+
 
 .texte1{
     width: 30%;
-    background: rgb(252, 255, 49);
     height: 200px;
+    margin: 10%;
+}
+
+.texte1 h2 {
+    margin-bottom: 30px;
+}
+
+.texte1 h3{
+    margin-bottom: 30px;
 }
 
 p{
@@ -160,46 +202,146 @@ p{
     justify-content: space-between;
 }
 
-
-.flex2{
+.flex{
     display: flex;
     justify-content: space-between;
+    
+}
+
+
+.nosBurger1 img{
+    width: 300px;
+    height: 70%;
+    float: right
+} 
+
+.nosBurger2 img{
+    width: 300px;
+    height: 70%;
+}
+
+.nosBurger3 img{
+    width: 300px;
+    height: 70%;
+}
+
+.flex2, .h1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    color: blue;
+    font-size: 20px;
+}
+
+.burgerNum1 img{
+    width: 300px;
+    height: 100%;
+    border-radius: 50px;
+    justify-content: space-around;
+
+}    
+
+.burgerNum2 img{
+    width: 300px;
+    height: 100%;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.burgerNum3 img{
+    width:  300px;
+    height: 100%;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+
+.bloc1{
+    width: 300px;
+    height: 100%;
+    background: green;
+    margin: 30px;
+
+}
+
+
+.newsletter{
+    height: 200px;
+    background: rgb(80, 115, 129);
+    display: flex;
+    justify-content: end;
     margin: 10%;
+}
+
+.offres{
+    margin: 30px;
+    align-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
+
+}
+
+.inscription{
+    margin: 30px;
+    text-align: right;
+    font-size:x-large;
+    color: rgb(170, 134, 140);
+}
+
+
+
+.newsletter img{
+    height: 50px;
+    margin: 5%;
+    background: rgb(255, 206, 255);
     
+}
+
+
+.bloc{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    margin: 70px;
+    width: 30%;
+   
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(213, 226, 233);
+}
+
+
+
+.Mentions, .Plan, .Contact{
+display: flex;
+flex-direction: column;
+padding: 20px;
 
 }
 
-.burgertune1{
-    width: 35%;
-    text-align: center;
+.rs{
+    height: 40px;
+    width: 40px;
 }
 
-.burgertune1 img{
-    width:50%;
+#maps {
+    height: 170px;
+    width: 200px;
+    object-fit: cover;
 
 }
-    
-    
 
-.burgertun2{
-    width: 35%;
-    text-align: center;
+.diapo-parent {
+    width: 100%;
+    max-width: 100%;
 }
 
-.burgertune2 img{
-    width:50%;
-    height: 20px;
+.diapo-parent img {
+    height: 200px;
+    width: 100px;
+    object-fit:cover;
 }
-
-.burgertune3{
-    width: 35%;
-    text-align: center;
-}
-
-.burgertune3 img{
-    width:50%;
-    height: 20px;
-}
-
 
 
